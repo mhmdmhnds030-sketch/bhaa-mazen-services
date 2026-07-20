@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 2 - Services Section</title>
-
+    <title>Bhaa Mazen - Services</title>
+    
     <style>
         /* Reset and Base Styles */
         * {
@@ -27,8 +26,29 @@
         .services-section {
             width: 100%;
             max-width: 1200px;
-            margin: auto auto;
+            margin: auto auto; 
             padding: 40px 20px;
+        }
+
+        /* تنسيق العنوان الرئيسي */
+        .section-title {
+            text-align: center;
+            font-size: 2.4rem;
+            color: #2c3e50;
+            margin-bottom: 50px;
+            font-weight: 800;
+            position: relative;
+            letter-spacing: 1.5px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #3498db;
+            margin: 12px auto 0 auto;
+            border-radius: 2px;
         }
 
         /* Flexbox Wrapper for Cards */
@@ -52,13 +72,12 @@
             flex-direction: column;
         }
 
-        /* Hover Effect for the entire card */
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
         }
 
-        /* Headings */
+        /* Headings داخل الكروت */
         .card h3 {
             font-size: 1.25rem;
             color: #2c3e50;
@@ -69,22 +88,21 @@
 
         /* Image Formatting */
         .card img {
-            width: 90%;
+            width: 90%; 
             margin: 0 auto;
-            height: 180px;
-            object-fit: contain;
-            background-color: #fafafa;
-            padding: 10px;
-            border-radius: 8px;
-            border: 2px solid transparent;
+            height: 180px;            
+            object-fit: contain;     
+            background-color: #fafafa; 
+            padding: 10px;           
+            border-radius: 8px; 
+            border: 2px solid transparent; 
             transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Hover effect on images */
         .card img:hover {
-            border-color: #3498db;
-            transform: scale(1.03);
-            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.15);
+            border-color: #3498db; 
+            transform: scale(1.03); 
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.15); 
         }
 
         /* Description Texts */
@@ -102,7 +120,7 @@
             color: #ffffff;
             text-align: center;
             padding: 25px 10px;
-            margin-top: auto;
+            margin-top: auto; 
         }
 
         footer p {
@@ -123,7 +141,6 @@
             align-items: center;
         }
 
-        /* تنسيق حجم ولون أيقونات الـ SVG الافتراضي */
         .social-links svg {
             width: 28px;
             height: 28px;
@@ -131,61 +148,47 @@
             transition: fill 0.3s ease;
         }
 
-        /* تأثير الألوان المخصصة عند التمرير */
         .social-links a:hover {
             transform: translateY(-3px);
         }
-
-        .social-links a.facebook:hover svg {
-            fill: #1877f2;
-        }
-
-        .social-links a.instagram:hover svg {
-            fill: #e1306c;
-        }
-
-        .social-links a.whatsapp:hover svg {
-            fill: #25d366;
-        }
-
-        .social-links a.github:hover svg {
-            fill: #ffffff;
-            opacity: 0.8;
-        }
+        .social-links a.facebook:hover svg { fill: #1877f2; }
+        .social-links a.instagram:hover svg { fill: #e1306c; }
+        .social-links a.whatsapp:hover svg { fill: #25d366; }
+        .social-links a.github:hover svg { fill: #ffffff; opacity: 0.8; }
     </style>
 </head>
-
 <body>
 
     <!-- Main Services Section -->
     <section class="services-section">
-        <div class="container">
+        
+        <!-- العنوان المنسق باسمك -->
+        <h2 class="section-title">Bhaa Mazen Services</h2>
 
+        <div class="container">
+            
             <!-- Card 1: Full Stack Development -->
             <div class="card">
                 <h3>Full Stack Development</h3>
-                <img src="starer/images/full-stack.webp" alt="Full Stack Development">
-                <p>Building complete web applications from scratch. This field covers frontend programming for user
-                    interaction, as well as backend development and database management to ensure the website runs fast
-                    and efficiently.</p>
+                <!-- تم تعديل المسار المباشر هنا -->
+                <img src="images/full-stack.webp" alt="Full Stack Development">
+                <p>Building complete web applications from scratch. This field covers frontend programming for user interaction, as well as backend development and database management to ensure the website runs fast and efficiently.</p>
             </div>
 
             <!-- Card 2: Cyber Security -->
             <div class="card">
                 <h3>Cyber Security & Networking</h3>
-                <img src="starer/images/images.jpg" alt="Cyber Security">
-                <p>Securing the digital infrastructure of companies and protecting them from cyber threats. The work
-                    involves continuous server monitoring, sensitive data encryption, and network management to
-                    guarantee a safe environment.</p>
+                <!-- تم تعديل المسار المباشر هنا -->
+                <img src="images/images.jpg" alt="Cyber Security">
+                <p>Securing the digital infrastructure of companies and protecting them from cyber threats. The work involves continuous server monitoring, sensitive data encryption, and network management to guarantee a safe environment.</p>
             </div>
 
             <!-- Card 3: UI/UX Design -->
             <div class="card">
                 <h3>UI/UX Design</h3>
-                <img src="starer/images/images (1).jpg" alt="UI/UX Design">
-                <p>Transforming complex ideas into interactive and user-friendly visual interfaces. This specialty
-                    focuses on studying user behavior and creating wireframes to build a seamless and attractive digital
-                    experience for apps and websites.</p>
+                <!-- تم تعديل المسار المباشر هنا ومراعاة المسافة في الاسم -->
+                <img src="images/images (1).jpg" alt="UI/UX Design">
+                <p>Transforming complex ideas into interactive and user-friendly visual interfaces. This specialty focuses on studying user behavior and creating wireframes to build a seamless and attractive digital experience for apps and websites.</p>
             </div>
 
         </div>
@@ -195,37 +198,14 @@
     <footer>
         <p>&copy; 2026 Bhaa Mazen. All Rights Reserved.</p>
         <div class="social-links">
-            <!-- أيقونة فيسبوك برمجية SVG -->
             <a href="https://facebook.com" target="_blank" class="facebook" title="Facebook">
-                <svg viewBox="0 0 24 24">
-                    <path
-                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
+                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
-            <!-- أيقونة إنستغرام برمجية SVG -->
             <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram">
-                <svg viewBox="0 0 24 24">
-                    <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                </svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
-            <!-- أيقونة واتساب برمجية SVG -->
             <a href="https://wa.me" target="_blank" class="whatsapp" title="WhatsApp">
-                <svg viewBox="0 0 24 24">
-                    <path
-                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.79-3.541l.37.219c1.472.873 3.155 1.333 4.882 1.334 5.542 0 10.051-4.51 10.055-10.05.002-2.684-1.038-5.207-2.93-7.099-1.892-1.891-4.408-2.934-7.094-2.935-5.547 0-10.055 4.511-10.059 10.056-.001 1.794.469 3.549 1.362 5.081l.24.412-1.01 3.693 3.784-.992zm11.704-4.805c-.322-.161-1.904-.94-2.197-1.048-.293-.108-.508-.162-.722.161-.215.322-.832 1.048-1.019 1.263-.188.216-.376.242-.698.081-.323-.161-1.364-.502-2.596-1.601-.959-.855-1.607-1.912-1.795-2.234-.188-.322-.02-.497.14-.657.145-.143.323-.376.484-.564.161-.188.215-.322.322-.537.108-.215.054-.403-.027-.564-.081-.161-.722-1.742-.99-2.387-.262-.63-.53-.544-.722-.553-.188-.01-.403-.012-.618-.012-.215 0-.564.081-.861.403-.297.321-1.13 1.102-1.13 2.688 0 1.587 1.155 3.12 1.316 3.335.161.215 2.274 3.473 5.507 4.873.77.333 1.37.532 1.839.68.774.246 1.478.211 2.035.128.621-.093 1.904-.779 2.174-1.493.27-.714.27-1.326.19-1.452-.08-.126-.293-.207-.615-.369z" />
-                </svg>
+                <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.79-3.541l.37.219c1.472.873 3.155 1.333 4.882 1.334 5.542 0 10.051-4.51 10.055-10.05.002-2.684-1.038-5.207-2.93-7.099-1.892-1.891-4.408-2.934-7.094-2.935-5.547 0-10.055 4.511-10.059 10.056-.001 1.794.469 3.549 1.362 5.081l.24.412-1.01 3.693 3.784-.992zm11.704-4.805c-.322-.161-1.904-.94-2.197-1.048-.293-.108-.508-.162-.722.161-.215.322-.832 1.048-1.019 1.263-.188.216-.376.242-.698.081-.323-.161-1.364-.502-2.596-1.601-.959-.855-1.607-1.912-1.795-2.234-.188-.322-.02-.497.14-.657.145-.143.323-.376.484-.564.161-.188.215-.322.322-.537.108-.215.054-.403-.027-.564-.081-.161-.722-1.742-.99-2.387-.262-.63-.53-.544-.722-.553-.188-.01-.403-.012-.618-.012-.215 0-.564.081-.861.403-.297.321-1.13 1.102-1.13 2.688 0 1.587 1.155 3.12 1.316 3.335.161.215 2.274 3.473 5.507 4.873.77.333 1.37.532 1.839.68.774.246 1.478.211 2.035.128.621-.093 1.904-.779 2.174-1.493.27-.714.27-1.326.19-1.452-.08-.126-.293-.207-.615-.369z"/></svg>
             </a>
-            <!-- أيقونة جيت هاب برمجية SVG -->
             <a href="https://github.com" target="_blank" class="github" title="GitHub">
-                <svg viewBox="0 0 24 24">
-                    <path
-                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                </svg>
-            </a>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+                <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
